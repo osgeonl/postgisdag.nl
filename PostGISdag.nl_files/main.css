@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    top:0;
+}
+
+*{
+    padding:0px;
+    margin:0px;
+    font-family: 'Space Mono', monospace;
+    color: #7F7F7F;
+}
+
+h1{
+    text-align: center;
+    color: #007F7F;
+}
+
+h2 {
+    color: #7F007F;
+    text-align: center;
+}
+
+h3{
+    color: #007F00;
+}
+
+.main-container {
+  display: flex; /* or inline-flex */
+  justify-content: space-around ;
+  align-items: stretch;
+  flex-direction: row ;
+  flex-flow: row wrap;
+  align-content: stretch;
+}
+
+.item{
+    max-width: 500px;
+    min-width: 350px;
+    padding: 30px;
+    border:1px solid #7F007F ;
+    margin-bottom: 13px;
+}
+
+#con1 {
+    background-image: url('Billy.jpg');
+    /* https://www.wur.nl/en/research-results/chair-groups/environmental-sciences/laboratory-of-geo-information-science-and-remote-sensing/research/sensing-measuring/terrestrial-laser-scanning-research.htm */
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 361px;
+    width: 500px;
+}
+
+#header{
+    display: flex; /* or inline-flex */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    height: 30vh;
+    text-align: center;
+    margin: auto;
+}
+
+
+
+@media (max-width: 768px) {
+ 
+.item{ 
+    min-height: 150px;
+    min-width: 150px;
+}
+
+}
+
+
