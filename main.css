@@ -1,10 +1,3 @@
-body{
-    background-color: black;
-    padding: 0;
-    margin: 0;
-    top:0;
-}
-
 *{
     padding:0px;
     margin:0px;
@@ -12,6 +5,11 @@ body{
     color: #7F7F7F;
 }
 
+body{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
 h1{
     text-align: center;
     color: #007F7F;
@@ -26,32 +24,9 @@ h3{
     color: #007F00;
 }
 
-.main-container {
-  display: flex; /* or inline-flex */
-  justify-content: space-around ;
-  align-items: stretch;
-  flex-direction: row ;
-  flex-flow: row wrap;
-  align-content: stretch;
+a {
+    color:yellowgreen
 }
-
-.item{
-    max-width: 500px;
-    min-width: 350px;
-    padding: 30px;
-    border:1px solid #7F007F ;
-    margin-bottom: 13px;
-}
-
-#con1 {
-    background-image: url('Billy.jpg');
-    /* https://www.wur.nl/en/research-results/chair-groups/environmental-sciences/laboratory-of-geo-information-science-and-remote-sensing/research/sensing-measuring/terrestrial-laser-scanning-research.htm */
-    background-repeat: no-repeat;
-    background-position: center ;
-    height: 361px;
-    width: 500px;
-}
-
 #header{
     display: flex; /* or inline-flex */
     justify-content: center;
@@ -61,6 +36,33 @@ h3{
     text-align: center;
     margin: auto;
 }
+.main-container {
+  display: flex; /* or inline-flex */
+  justify-content: space-around ;
+  align-items: stretch;
+  flex-direction: row ;
+  flex-flow: row wrap;
+  align-content: stretch;
+}
+.item{
+    max-width: 500px;
+    min-width: 450px;
+    padding: 3rem;
+    border:1px solid #7F007F ;
+    min-height: 200px;
+    margin: 0.5rem;
+}
+
+#elephantintheroom {
+    background-image: url('Billy.jpg');
+    /* https://www.wur.nl/en/research-results/chair-groups/environmental-sciences/laboratory-of-geo-information-science-and-remote-sensing/research/sensing-measuring/terrestrial-laser-scanning-research.htm */
+    background-repeat: no-repeat;
+    background-position: center ;
+    height: 361px;
+    width: 500px;
+}
+
+
 
 
 
