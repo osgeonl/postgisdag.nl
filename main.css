@@ -38,19 +38,26 @@ a {
 }
 .main-container {
   display: flex; /* or inline-flex */
-  justify-content: space-around ;
+  padding: 2rem;
+  justify-content: space-between ;
   align-items: stretch;
   flex-direction: row ;
   flex-flow: row wrap;
   align-content: stretch;
 }
 .item{
-    max-width: 500px;
-    min-width: 450px;
+    /* max-width: 500px; */
+    /* min-width: 450px; */
     padding: 3rem;
     border:1px solid #7F007F ;
-    min-height: 200px;
     margin: 0.5rem;
+}
+
+.item:first-child{
+    margin: 0.5rem auto;
+}
+.item:last-child{
+    margin: 0.5rem auto;
 }
 
 #elephantintheroom {
@@ -63,8 +70,15 @@ a {
 }
 
 
+#logo{
+    width: 300px;
+    mix-blend-mode: hard-light;
+    text-align: center;
+}
 
-
+#organized {
+    text-align: center;
+}
 
 @media (max-width: 768px) {
  
