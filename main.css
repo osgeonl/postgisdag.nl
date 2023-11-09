@@ -1,92 +1,99 @@
-*{
-    padding:0px;
-    margin:0px;
-    font-family: 'Space Mono', monospace;
-    color: #7F7F7F;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Space Mono", monospace;
+  color: #e1e1e1;
 }
 
-body{
-    background-color: black;
-    padding: 0;
-    margin: 0;
+body {
+  background-color: black;
+  padding: 3rem;
+  margin: 0;
+  font-size: 14pt;
 }
-h1{
-    text-align: center;
-    color: #007F7F;
+h1 {
+  text-align: center;
+  color: #007f7f;
+  font-size: 300%;
 }
 
 h2 {
-    color: #7F007F;
-    text-align: center;
+  color: #7f007f;
+  text-align: center;
 }
 
-h3{
-    color: #007F00;
+h3 {
+  color: #00a100;
 }
 
 a {
-    color:yellowgreen
+  color: rgb(205, 174, 50);
 }
-#header{
-    display: flex; /* or inline-flex */
-    justify-content: center;
-    align-items: center;
-    flex-direction: column ;
-    height: 30vh;
-    text-align: center;
-    margin: auto;
-}
-.main-container {
+.centered {
   display: flex; /* or inline-flex */
-  padding: 2rem;
-  justify-content: space-between ;
-  align-items: stretch;
-  flex-direction: row ;
-  flex-flow: row wrap;
-  align-content: stretch;
-}
-.item{
-    /* max-width: 500px; */
-    /* min-width: 450px; */
-    padding: 3rem;
-    border:1px solid #7F007F ;
-    margin: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30vh;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
 }
 
-.item:first-child{
+.main-container {
+  padding: 1rem;
+  display: grid; /* or inline-flex */
+  grid-template-columns: repeat(1, 1fr);
+}
+
+/* Tablet & turned mobile */
+@media screen and (min-width: 900px) {
+  .main-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablet & turned mobile */
+@media screen and (min-width: 1920px) {
+  .main-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.item {
+  /* max-width: 500px; */
+  /* min-width: 450px; */
+  padding: 3rem;
+  border: 1px solid #7f007f;
+  margin: 0.5rem;
+  justify-self: stretch;
+}
+
+/* .item:first-child{
     margin: 0.5rem auto;
 }
 .item:last-child{
     margin: 0.5rem auto;
-}
+} */
 
 #elephantintheroom {
-    background-image: url('Billy.jpg');
-    /* https://www.wur.nl/en/research-results/chair-groups/environmental-sciences/laboratory-of-geo-information-science-and-remote-sensing/research/sensing-measuring/terrestrial-laser-scanning-research.htm */
-    background-repeat: no-repeat;
-    background-position: center ;
-    height: 361px;
-    width: 500px;
+  background-image: url("Billy.jpg");
+  /* https://www.wur.nl/en/research-results/chair-groups/environmental-sciences/laboratory-of-geo-information-science-and-remote-sensing/research/sensing-measuring/terrestrial-laser-scanning-research.htm */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 361px;
+  /* width: 500px; */
 }
 
-
-#logo{
-    width: 300px;
-    mix-blend-mode: hard-light;
-    text-align: center;
-}
-
-#organized {
-    text-align: center;
+#logo {
+  width: 300px;
+  mix-blend-mode: hard-light;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
- 
-.item{ 
+  .item {
     min-height: 150px;
     min-width: 150px;
+  }
 }
-
-}
-
-
