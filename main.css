@@ -85,6 +85,9 @@ a {
   /* width: 500px; */
 }
 
+#geodan {
+  width: 300px;
+}
 #logo {
   width: 300px;
   mix-blend-mode: hard-light;
